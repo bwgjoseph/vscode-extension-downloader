@@ -1,0 +1,43 @@
+{
+  "name": "vscode-extension-downloader",
+  "version": "0.1.0",
+  "description": "Visual Studio Code extensions downloader for offline installation",
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "generate": "code --list-extensions --show-versions > extensions.txt",
+    "download:file": "cross-env MODE=file node .",
+    "download:dir": "cross-env MODE=dir node .",
+    "updater": "node ./src/updater.js"
+  },
+  "keywords": [
+    "vscode",
+    "visualstudiocode",
+    "extension",
+    "downloader",
+    "offline",
+    "automater"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwgjoseph/vscode-extension-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bwgjoseph/vscode-extension-downloader/issues"
+  },
+  "license": "MIT",
+  "author": "Joseph Gan <josephgan@live.com.sg> (https://bwgjoseph.com)",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "compare-versions": "^3.5.0",
+    "download": "^7.1.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}
