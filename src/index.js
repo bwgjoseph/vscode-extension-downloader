@@ -36,7 +36,7 @@ const getExtensionVersion = async (url) => {
     const response = await crawl(url);
     const $ = cheerio.load(response);
     const infoTable = $('.ux-table-metadata > tbody > tr > td').next(); // Get 2nd td
-    version = infoTable.find('div').first().text();
+    version = infoTable.first().text();
   } catch (err) {
     if (err) console.error(err);
     console.error(`Unable to fetch extension version at ${url}`);
@@ -50,7 +50,7 @@ const getExtensionVersion = async (url) => {
  *
  * @param {number} ms sleep duration in milliseconds
  */
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Download file given a URL
@@ -66,7 +66,7 @@ const startDownload = async (extension, url, delay, directory) => {
   try {
     if (delay > 0) {
       const now = new Date().getTime();
-      console.log(`Restarting download of ${extension.name} in ${delay/1000} seconds at ${new Date(now + delay)}`);
+      console.log(`Restarting download of ${extension.name} in ${delay / 1000} seconds at ${new Date(now + delay)}`);
       await sleep(delay);
     }
     console.log(`Starting download from ${url}`);
@@ -84,7 +84,7 @@ const startDownload = async (extension, url, delay, directory) => {
       console.error(error);
     }
   }
-}
+};
 
 /**
  * Delete outdated extension file(s)
@@ -94,14 +94,13 @@ const startDownload = async (extension, url, delay, directory) => {
  */
 const deleteExtensions = async (oldExtensions, directory) => {
   // Delete outdated extension file(s)
-  for (let j in oldExtensions) {
+  for (const j in oldExtensions) {
     if (await common.isFileExist(`${directory}/${oldExtensions[j].app}-${oldExtensions[j].version}.vsix`)) {
       fs.unlink(`${directory}/${oldExtensions[j].app}-${oldExtensions[j].version}.vsix`,
         (err) => {
           if (err) console.error(err);
           console.log(`${oldExtensions[j].app}-${oldExtensions[j].version}.vsix deleted`);
-        }
-      );
+        });
     }
   }
 };
@@ -117,10 +116,10 @@ const deleteExtensions = async (oldExtensions, directory) => {
  */
 const getExtensions = async (mode, directory) => {
   let extensions = [];
-  (mode === 'file') ? extensions = await parser.parseFile(): extensions = await parser.parseDir(directory);
+  (mode === 'file') ? extensions = await parser.parseFile() : extensions = await parser.parseDir(directory);
 
   return extensions;
-}
+};
 
 /**
  * Determine whether a file has a updated version and proceed to
@@ -130,12 +129,12 @@ const getExtensions = async (mode, directory) => {
  * @param {string} directory directory to check for
  */
 const start = async (mode, directory) => {
-  let oldExtensions = [];
+  const oldExtensions = [];
 
   const extensions = await getExtensions(mode, directory);
   if (extensions && extensions.length === 0) return;
 
-  for (let i in extensions) {
+  for (const i in extensions) {
     // Search for latest version
     const latestVersion = await getExtensionVersion(`https://marketplace.visualstudio.com/items?itemName=${extensions[i].app}`);
     console.log(`${JSON.stringify(extensions[i])}, latest version: ${latestVersion}`);
