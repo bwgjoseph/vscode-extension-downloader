@@ -28,7 +28,7 @@
   "license": "MIT",
   "author": "Joseph Gan <josephgan@live.com.sg> (https://bwgjoseph.com)",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.0",
     "cheerio": "^1.0.0-rc.3",
     "compare-versions": "^3.5.1",
     "download": "^7.1.0",
