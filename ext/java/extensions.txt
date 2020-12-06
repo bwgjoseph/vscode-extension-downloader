@@ -1,0 +1,17 @@
+dgileadi.java-decompiler@0.0.2
+ecmel.vscode-spring-boot@0.0.10
+faustinoaq.javac-linter@1.3.1
+GabrielBB.vscode-lombok@1.0.1
+naco-siren.gradle-language@0.2.3
+Pivotal.vscode-boot-dev-pack@0.0.8
+Pivotal.vscode-spring-boot@1.23.0
+redhat.java@0.72.0
+redhat.vscode-xml@0.14.0
+shengchen.vscode-checkstyle@1.3.3
+vscjava.vscode-java-debug@0.29.0
+vscjava.vscode-java-dependency@0.15.0
+vscjava.vscode-java-pack@0.12.0
+vscjava.vscode-java-test@0.26.0
+vscjava.vscode-maven@0.26.0
+vscjava.vscode-spring-boot-dashboard@0.1.10
+vscjava.vscode-spring-initializr@0.6.1

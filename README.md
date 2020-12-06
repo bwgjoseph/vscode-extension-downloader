@@ -15,6 +15,12 @@ In the project directory, you can run:
 
 Generates a list of extensions from visual studio code and output to a file
 
+### `npm run generate:ext-file [rootDirectory]`
+
+Generates `extensions.txt` file for each of the subdirectories based on the `vsix` file within each directory
+
+Default root directory is `ext` if not specified
+
 ### `npm run download:file`
 
 Uses the list of extensions generated from `npm run prepare` to check against visual studio code marketplace for any newer version and download the extension to `ext` directory.

@@ -6,6 +6,7 @@
   "scripts": {
     "eslint": "eslint .",
     "generate": "code --list-extensions --show-versions > extensions.txt",
+    "generate:ext-file": "node ./src/generate-file.js",
     "download:file": "cross-env MODE=file node .",
     "download:dir": "cross-env MODE=dir node .",
     "updater": "node ./src/updater.js"
