@@ -116,7 +116,7 @@ const deleteExtensions = async (oldExtensions, directory) => {
  */
 const getExtensions = async (mode, directory) => {
   let extensions = [];
-  (mode === 'file') ? extensions = await parser.parseFile() : extensions = await parser.parseDir(directory);
+  (mode === 'file') ? extensions = await parser.parseFile(directory) : extensions = await parser.parseDir(directory);
 
   return extensions;
 };

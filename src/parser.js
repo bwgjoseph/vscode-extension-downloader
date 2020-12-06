@@ -45,13 +45,17 @@ const parseDir = async (directory) => {
 
 /**
  * Parse a list of extension reside in the `extensions.txt` file
+ * Default `directory` is `.`
+ *
+ * @param {string} directory directory to parse
  */
-const parseFile = async () => {
+const parseFile = async (directory = '.') => {
   console.log('parse by file');
+  console.log('parsing directory: ', directory);
   let extensions = [];
 
   try {
-    const data = await fs.readFileAsync('extensions.txt', 'utf8');
+    const data = await fs.readFileAsync(`${directory}/extensions.txt`, 'utf8');
     const lines = data.toString().split("\n");
 
     lines.map(line => {
