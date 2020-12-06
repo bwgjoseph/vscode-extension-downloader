@@ -1,6 +1,6 @@
 `vscode-extension-downloader` let you
-- Generate a list of `vscode` extensions on your local machine then export it to a file. See `npm run generate`
-- Using the file, it can download extension automatically. See `npm run download:file`
+- Generate a list of `vscode` extensions on your local machine then export it to a file. See `npm run generate` and `npm run generate:ext-file`
+- Using the file, it can download extension automatically. See `npm run download:file`, now supports custom directory path
 - It can also update your list of extension to the latest version automatically. See `npm run download:dir`
 - Compare and updates extension. See `npm run updater`
 

@@ -3,7 +3,6 @@ const compareVersions = require('compare-versions');
 const parser = require('./parser');
 const common = require('./common');
 
-
 /**
  * Read from target directory, check if newer version exist in source directory
  * Copy newer version if exist
