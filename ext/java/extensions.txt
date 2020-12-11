@@ -11,7 +11,7 @@ shengchen.vscode-checkstyle@1.3.3
 vscjava.vscode-java-debug@0.29.0
 vscjava.vscode-java-dependency@0.15.0
 vscjava.vscode-java-pack@0.12.0
-vscjava.vscode-java-test@0.26.0
+vscjava.vscode-java-test@0.26.1
 vscjava.vscode-maven@0.26.0
 vscjava.vscode-spring-boot-dashboard@0.1.10
 vscjava.vscode-spring-initializr@0.6.1

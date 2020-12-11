@@ -8,6 +8,8 @@ esbenp.prettier-vscode@5.8.0
 formulahendry.auto-close-tag@0.5.9
 formulahendry.auto-rename-tag@0.1.5
 formulahendry.docker-explorer@0.1.7
+meganrogge.template-string-converter@0.3.6
+mitchdenny.ecdc@1.3.0
 mongodb.mongodb-vscode@0.3.0
 ms-azuretools.vscode-docker@1.8.1
 msjsdiag.debugger-for-chrome@4.12.11
