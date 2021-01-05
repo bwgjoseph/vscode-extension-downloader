@@ -4,12 +4,13 @@ asciidoctor.asciidoctor-vscode@2.8.4
 berublan.vscode-log-viewer@0.11.1
 edb.vandelay@4.5.0
 GrapeCity.gc-excelviewer@3.0.40
-Gruntfuggly.todo-tree@0.0.192
+Gruntfuggly.todo-tree@0.0.193
 humao.rest-client@0.24.4
 ivory-lab.jenkinsfile-support@1.1.0
 janjoerke.jenkins-pipeline-linter-connector@1.2.0
-jebbs.plantuml@2.14.0
+jebbs.plantuml@2.14.1
 mikestead.dotenv@1.0.1
+ms-vscode-remote.remote-ssh@0.62.0
 ms-vscode-remote.remote-wsl@0.52.0
 PKief.material-icon-theme@4.4.0
 redhat.vscode-yaml@0.13.0
