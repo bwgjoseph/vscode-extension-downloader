@@ -1,5 +1,7 @@
 42Crunch.vscode-openapi@3.10.0
 Arjun.swagger-viewer@3.0.1
+asciidoctor.asciidoctor-vscode@2.8.7
+berublan.vscode-log-viewer@0.12.1
 edb.vandelay@4.5.0
 GrapeCity.gc-excelviewer@3.0.41
 Gruntfuggly.todo-tree@0.0.196
@@ -8,6 +10,8 @@ ivory-lab.jenkinsfile-support@1.1.0
 janjoerke.jenkins-pipeline-linter-connector@1.2.0
 jebbs.plantuml@2.14.3
 mikestead.dotenv@1.0.1
+ms-vscode-remote.remote-ssh@0.63.0
+ms-vscode-remote.remote-wsl@0.53.3
 PKief.material-icon-theme@4.5.0
 redhat.vscode-yaml@0.14.0
 tabeyti.jenkins-jack@1.1.2
