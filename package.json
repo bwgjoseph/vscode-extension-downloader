@@ -33,7 +33,7 @@
     "cheerio": "^1.0.0-rc.3",
     "compare-versions": "^3.6.0",
     "download": "^8.0.0",
-    "puppeteer": "^5.5.0"
+    "puppeteer": "^9.1.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
