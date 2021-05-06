@@ -30,7 +30,7 @@
   "author": "Joseph Gan <josephgan@live.com.sg> (https://bwgjoseph.com)",
   "dependencies": {
     "axios": "^0.21.0",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.9",
     "compare-versions": "^3.6.0",
     "download": "^8.0.0",
     "puppeteer": "^5.5.0"
